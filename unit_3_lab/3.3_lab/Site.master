@@ -1,0 +1,28 @@
+<%@ Master Language="C#" AutoEventWireup="true" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+ <title>Master Page Demo</title>
+ <style>
+  body{font-family:Segoe UI;margin:0;}
+  .head{background:#2c3e50;color:#fff;padding:15px;text-align:center;}
+  .menu{background:#34495e;padding:10px;text-align:center;}
+  .menu a{color:#fff;margin:0 12px;text-decoration:none;}
+  .body{min-height:280px;padding:20px;}
+  .foot{background:#2c3e50;color:#fff;padding:10px;text-align:center;}
+ </style>
+ <asp:ContentPlaceHolder ID="head" runat="server" />
+</head>
+<body>
+<form id="form1" runat="server">
+ <div class="head"><h1>My Web Application</h1></div>
+ <div class="menu">
+   <a href="Home.aspx">Home</a><a href="About.aspx">About</a><a href="Contact.aspx">Contact</a>
+ </div>
+ <div class="body">
+   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+ </div>
+ <div class="foot">Copyright &copy; 2025 - All Rights Reserved</div>
+</form>
+</body>
+</html>
